@@ -2,11 +2,12 @@ body {
   color: rgb(29, 54, 73);
   background-image: linear-gradient(
     to bottom,
-    rgb(232, 233, 159) 70%,
-    rgba(242, 245, 86, 0.7) 30%
+    rgb(229, 230, 183) 0%,
+    rgba(232, 235, 100, 0.7) 100%
   );
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
+  font-family: 'Noto Serif', serif;
 }
 
 h3 {
@@ -32,11 +33,13 @@ li {
 .start-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 15vh 15vh 25vh 10vh;
+  grid-template-rows: 15vh 20vh 20vh 10vh 10vh;
+  grid-gap: 10px;
   grid-template-areas:
     'nav nav nav nav nav'
     'basics basics basics basics basics'
     'main main main main main'
+    'blog blog blog blog blog'
     'footer footer footer footer footer';
 }
 
@@ -55,13 +58,16 @@ li {
   justify-content: space-around;
 }
 
-.big-button {
-  height: 100px;
-  width: 20%;
+.small-button {
+  height: 70px;
+  width: 30%;
   background: lightgrey;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   text-decoration: none;
+  padding: 10px;
+  margin: 25px 6px;
+  border-radius: 8px;
 }
 
 .main {
@@ -70,6 +76,26 @@ li {
   justify-content: space-around;
   padding: 10px;
   grid-area: main;
+}
+
+.blog {
+  grid-area: blog;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.big-button {
+  width: 50%;
+  height: 50px;
+  background: lightgrey;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  margin: 7px;
+  border-radius: 8px;
 }
 
 .footer {
