@@ -9,43 +9,67 @@ body {
   cursor: pointer;
 }
 
+h3 {
+  margin-top: 40px;
+}
+
+h4 {
+  margin-bottom: 7px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.logo {
+  height: 200px;
+}
+
 .start-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 15vh 15vh 20vh 10vh;
+  grid-template-rows: 15vh 15vh 25vh 10vh;
   grid-template-areas:
     'nav nav nav nav nav'
     'basics basics basics basics basics'
-    'about who-we-are hours blog contact'
+    'main main main main main'
     'footer footer footer footer footer';
 }
 
 .nav {
   grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid black;
 }
 
 .basics {
   grid-area: basics;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.about {
-  grid-area: about;
+.big-button {
+  height: 100px;
+  width: 20%;
+  background: lightgrey;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.who-we-are {
-  grid-area: who-we-are;
-}
-
-.hours {
-  grid-area: hours;
-}
-
-.blog {
-  grid-area: blog;
-}
-
-.contact {
-  grid-area: contact;
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  grid-area: main;
 }
 
 .footer {
