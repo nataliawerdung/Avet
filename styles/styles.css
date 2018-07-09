@@ -1,0 +1,53 @@
+body {
+  color: rgb(29, 54, 73);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(232, 233, 159) 70%,
+    rgba(242, 245, 86, 0.7) 30%
+  );
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.start-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15vh 15vh 20vh 10vh;
+  grid-template-areas:
+    'nav nav nav nav nav'
+    'basics basics basics basics basics'
+    'about who-we-are hours blog contact'
+    'footer footer footer footer footer';
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.basics {
+  grid-area: basics;
+}
+
+.about {
+  grid-area: about;
+}
+
+.who-we-are {
+  grid-area: who-we-are;
+}
+
+.hours {
+  grid-area: hours;
+}
+
+.blog {
+  grid-area: blog;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.footer {
+  grid-area: footer;
+}
