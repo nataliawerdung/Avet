@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kontakt</title>
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <a href="./index.html">
+      <img src="images/avet.svg" alt="logo" class="logo">
+    </a>
+    <h3>Przychodnia weterynaryjna Avet</h3>
+  </nav>
+
+  <section class="section contact-form">
+
+    <h4 class="h1-responsive font-weight-bold text-center my-5">Skontaktuj sie</h4>
+    <p class="text-center w-responsive mx-auto mb-5">Macie Panstwo pytanie? Prosze do nas dzwonic also pisac a my postaramy sie o szybka odpowiedz</p>
+
+    <div class="row">
+
+      <div class="col-md-9 mb-md-0 mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+          <div class="row">
+
+            <div class="col-md-5">
+              <div class="md-form mb-0">
+                <input type="text" id="name" name="name" class="form-control">
+                <label for="name" class="">Imie i nazwisko</label>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="md-form mb-0">
+                <input type="text" id="email" name="email" class="form-control">
+                <label for="email" class="">Adres emailowy</label>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-10">
+              <div class="md-form mb-0">
+                <input type="text" id="subject" name="subject" class="form-control">
+                <label for="subject" class="">Temat</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-10">
+
+              <div class="md-form">
+                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                <label for="message">Wiadomosc</label>
+              </div>
+
+            </div>
+          </div>
+
+        </form>
+
+        <div class="text-center text-md-left">
+          <a class="btn btn-primary" onclick="validateForm()">Wyslij</a>
+        </div>
+        <div id="status"></div>
+      </div>
+
+      <div class="col-md-3 text-center">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <i class="fa fa-map-marker fa-2x"></i>
+            <p>Pana Tadeusza 6
+              <br> 10-461 Olsztyn</p>
+          </li>
+
+          <li>
+            <i class="fa fa-phone mt-4 fa-2x"></i>
+            <p>Telefon: +48 89 534 52 28</p>
+          </li>
+
+          <li>
+            <i class="fa fa-envelope mt-4 fa-2x"></i>
+            <p>adres mailowy avetu</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

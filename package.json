@@ -5,11 +5,13 @@
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node script.js"
+    "start": "node script.js",
+    "deploy": "now --public"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node": "^10.6.0"
+    "node": "^10.6.0",
+    "now": "^11.2.8"
   }
 }
