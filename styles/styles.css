@@ -1,13 +1,14 @@
 body {
   color: rgb(29, 54, 73);
-  background-image: linear-gradient(
+  background: linear-gradient(
     to bottom,
-    rgb(229, 230, 183) 0%,
-    rgba(232, 235, 100, 0.7) 100%
+    rgb(255, 252, 234) 0%,
+    rgb(242, 231, 181) 100%
   );
   font-size: 20px;
   cursor: pointer;
   font-family: 'Noto Serif', serif;
+  height: 100vh;
 }
 
 h2,
@@ -17,6 +18,10 @@ h3 {
 
 h4 {
   margin-bottom: 7px;
+}
+
+a {
+  color: rgb(29, 54, 73);
 }
 
 ul {
@@ -34,13 +39,57 @@ li {
 .start-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 15vh 20vh 20vh 10vh 10vh;
+  grid-template-rows: 120px 20vh 20vh 10vh 5vh;
   grid-gap: 10px;
   grid-template-areas:
     'nav nav nav nav nav'
-    'basics basics basics basics basics'
+    'basics basics basics basics .'
     'main main main main main'
     'blog blog blog blog blog'
+    'footer footer footer footer footer';
+}
+
+.contact-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 120px 60vh 5vh;
+  grid-gap: 10px;
+  grid-template-areas:
+    'nav nav nav nav nav'
+    'contact-form contact-form contact-form contact-form contact-form'
+    'footer footer footer footer footer';
+}
+
+.doctors-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 120px 60vh 5vh;
+  grid-gap: 5px;
+  grid-template-areas:
+    'nav nav nav nav nav'
+    'doctors doctors doctors doctors doctors'
+    'footer footer footer footer footer';
+}
+
+.about-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 120px 60vh 5vh;
+  grid-gap: 10px;
+  grid-template-areas:
+    'nav nav nav nav nav'
+    'about about about about about'
+    'footer footer footer footer footer';
+}
+
+.hours-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20px 60vh 5vh;
+  grid-gap: 10px;
+  grid-template-areas:
+    'nav nav nav nav nav'
+    'hours hours hours hours hours'
     'footer footer footer footer footer';
 }
 
@@ -49,7 +98,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid white;
 }
 
 .basics {
@@ -57,12 +106,13 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 30px;
 }
 
 .small-button {
   height: 70px;
   width: 30%;
-  background: lightgrey;
+  background: rgb(160, 157, 179);
   margin-top: 30px;
   text-align: center;
   text-decoration: none;
@@ -71,12 +121,17 @@ li {
   border-radius: 8px;
 }
 
+.small-button:hover {
+  background: rgb(170, 167, 187);
+}
+
 .main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 10px;
   grid-area: main;
+  margin-top: 30px;
 }
 
 .blog {
@@ -89,8 +144,8 @@ li {
 
 .big-button {
   width: 50%;
-  height: 50px;
-  background: lightgrey;
+  height: 70px;
+  background: rgb(160, 157, 179);
   margin-top: 20px;
   text-align: center;
   text-decoration: none;
@@ -99,17 +154,28 @@ li {
   border-radius: 8px;
 }
 
+.big-button:hover {
+  background: rgb(170, 167, 187);
+}
+
+.h1-responsive {
+  font-size: 32px;
+}
+
 .hours {
   margin: 20px;
   width: 90%;
+  grid-area: hours;
 }
 
 .contact-form {
-  margin: 50px;
+  margin: 0px 50px;
+  grid-area: contact-form;
 }
 
 .team-section {
   padding: 0px 10px;
+  grid-area: team-section;
 }
 
 .footer {
