@@ -10,6 +10,7 @@ body {
   font-family: 'Noto Serif', serif;
 }
 
+h2,
 h3 {
   margin-top: 40px;
 }
@@ -98,10 +99,19 @@ li {
   border-radius: 8px;
 }
 
-.footer {
-  grid-area: footer;
+.hours {
+  margin: 20px;
+  width: 90%;
 }
 
 .contact-form {
   margin: 50px;
+}
+
+.team-section {
+  padding: 0px 10px;
+}
+
+.footer {
+  grid-area: footer;
 }
