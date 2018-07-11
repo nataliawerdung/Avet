@@ -9,6 +9,7 @@ body {
   cursor: pointer;
   font-family: 'Noto Serif', serif;
   height: 100vh;
+  line-height: 150%;
 }
 
 h2,
@@ -39,11 +40,12 @@ li {
 .start-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 120px 20vh 20vh 10vh 5vh;
+  grid-template-rows: 100px 40vh 20vh 20vh 10vh 5vh;
   grid-gap: 10px;
   grid-template-areas:
     'nav nav nav nav nav'
-    'basics basics basics basics .'
+    'img img img basics basics'
+    'img img img basics basics'
     'main main main main main'
     'blog blog blog blog blog'
     'footer footer footer footer footer';
@@ -74,8 +76,8 @@ li {
 .about-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 120px 60vh 5vh;
-  grid-gap: 10px;
+  grid-template-rows: 120px 80vh 5vh;
+  grid-gap: 5px;
   grid-template-areas:
     'nav nav nav nav nav'
     'about about about about about'
@@ -101,11 +103,27 @@ li {
   border-bottom: 2px solid white;
 }
 
+.start-image {
+  grid-area: img;
+  background-size: cover;
+  background: url('https://www.ruhmservice.de/wp-content/uploads/2015/09/Foto_Tierarztpraxis_Beispiel_ruhmservice.de_.jpg')
+    center no-repeat;
+  margin-left: 40px;
+  border-radius: 6px;
+}
+
+@media (max-width: 700px) {
+  .start-image {
+    display: none;
+  }
+}
+
 .basics {
   grid-area: basics;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   margin-top: 30px;
 }
 
@@ -113,16 +131,18 @@ li {
   height: 70px;
   width: 30%;
   background: rgb(160, 157, 179);
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
   text-decoration: none;
   padding: 10px;
   margin: 25px 6px;
-  border-radius: 8px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 2px rgb(132, 126, 173);
+  font-weight: bold;
 }
 
 .small-button:hover {
-  background: rgb(170, 167, 187);
+  background: rgb(162, 161, 173);
 }
 
 .main {
@@ -146,16 +166,18 @@ li {
   width: 50%;
   height: 70px;
   background: rgb(160, 157, 179);
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: center;
   text-decoration: none;
   padding: 5px;
   margin: 7px;
-  border-radius: 8px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 4px rgb(132, 126, 173);
+  font-weight: bold;
 }
 
 .big-button:hover {
-  background: rgb(170, 167, 187);
+  background: rgb(162, 161, 173);
 }
 
 .h1-responsive {
