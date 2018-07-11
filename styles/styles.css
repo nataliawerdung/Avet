@@ -46,8 +46,8 @@ li {
     'nav nav nav nav nav'
     'img img img basics basics'
     'img img img basics basics'
-    'main main main main main'
-    'blog blog blog blog blog'
+    'img img img main main'
+    'blog blog blog . .'
     'footer footer footer footer footer';
 }
 
@@ -121,9 +121,9 @@ li {
 .basics {
   grid-area: basics;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 30px;
 }
 
@@ -163,7 +163,7 @@ li {
 }
 
 .big-button {
-  width: 50%;
+  width: 40%;
   height: 70px;
   background: rgb(160, 157, 179);
   margin-top: 15px;
@@ -177,6 +177,21 @@ li {
 }
 
 .big-button:hover {
+  background: rgb(162, 161, 173);
+}
+
+.contact-button {
+  background: rgb(248, 204, 87);
+  box-shadow: 2px 2px 1px rgb(160, 157, 179);
+  width: 100px;
+  height: 70px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.contact-button:hover {
   background: rgb(162, 161, 173);
 }
 
