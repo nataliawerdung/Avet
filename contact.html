@@ -15,7 +15,9 @@
 <body class="contact-page">
 
   <nav class="nav">
-    <img src="images/logo_svg.svg" alt="logo" class="logo">
+    <a href="./index.html">
+      <img src="images/logo_svg.svg" alt="logo" class="logo">
+    </a>
 
     <!--Navbar-->
     <nav class="navbar navbar-dark indigo darken-2">
@@ -36,7 +38,7 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Strona glowna
+            <a class="nav-link" href="./index.html">Strona główna
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -47,10 +49,10 @@
             <a class="nav-link" href="./doctors.html">Lekarze</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Skontaktuj sie</a>
+            <a class="nav-link" href="./contact.html">Skontaktuj się</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./hours.html">Grafik dyzurow</a>
+            <a class="nav-link" href="./hours.html">Grafik dyżurów</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./blog.html">Blog</a>
@@ -67,20 +69,20 @@
 
   <section class="section contact-form">
 
-    <h4 class="h1-responsive font-weight-bold text-center my-3">Skontaktuj sie</h4>
-    <p class="text-center w-responsive mx-auto mb-5">Macie Panstwo pytanie? Prosze do nas dzwonic also pisac a my postaramy sie o szybka odpowiedz</p>
+    <h4 class="h1-responsive font-weight-bold text-center my-3">Skontaktuj się</h4>
+    <p class="text-center w-responsive mx-auto mb-5">Macie Państwo pytanie? Proszę do nas dzwonić also pisać a my postaramy się o szybką odpowiedź</p>
 
     <div class="col-md-5">
       <ul class="list-unstyled mb-0">
         <li>
           <i class="fa fa-map-marker fa-2x"></i>
-          <p>Pana Tadeusza 6
+          <p>ul. Pana Tadeusza 6
             <br> 10-461 Olsztyn</p>
         </li>
 
         <li>
           <i class="fa fa-phone mt-4 fa-2x"></i>
-          <p>Telefon: +48 89 534 52 28</p>
+          <p>Telefon: 089 534 52 28</p>
         </li>
 
         <li>
@@ -99,7 +101,7 @@
             <div class="col-md-5">
               <div class="md-form mb-0">
                 <input type="text" id="name" name="name" class="form-control">
-                <label for="name" class="">Imie i nazwisko</label>
+                <label for="name" class="">Imię i nazwisko</label>
               </div>
             </div>
 
@@ -126,7 +128,7 @@
 
               <div class="md-form">
                 <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                <label for="message">Wiadomosc</label>
+                <label for="message">Wiadomość</label>
               </div>
 
             </div>
@@ -135,7 +137,7 @@
         </form>
 
         <div class="text-center text-md-left">
-          <a class="btn btn-primary" onclick="validateForm()">Wyslij</a>
+          <a class="btn btn-primary" onclick="validateForm()">Wyślij</a>
         </div>
         <div id="status"></div>
       </div>

@@ -220,6 +220,12 @@ li {
   grid-area: team-section;
 }
 
+.about {
+  padding: 10px;
+  margin: 0px 15px;
+  grid-area: about;
+}
+
 .footer {
   grid-area: footer;
 }
